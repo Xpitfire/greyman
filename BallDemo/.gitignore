@@ -32,6 +32,6 @@ sysinfo.txt
 # Ignore standard assets
 Assets/Standard Assets
 Assets/SampleScenes
-#Assets/Editor
-#Assets/SampleScenes.meta
-#Assets/Standard Assets.meta
+Assets/Editor
+Assets/SampleScenes.meta
+Assets/Standard Assets.meta
