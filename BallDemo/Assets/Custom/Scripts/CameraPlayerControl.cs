@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class CameraPlayerRotation : MonoBehaviour
+public class CameraPlayerControl : MonoBehaviour
 {
     public Transform lookAt;
 
@@ -43,10 +43,10 @@ public class CameraPlayerRotation : MonoBehaviour
         switch (direction)
         {
             case 0:
-                offset = Quaternion.Euler(0, -90, 0) * offset;
+                offset = Quaternion.Euler(0, -45, 0) * offset;
                 break;
             case 1:
-                offset = Quaternion.Euler(0, 90, 0) * offset;
+                offset = Quaternion.Euler(0, 45, 0) * offset;
                 break;
         }
     }
