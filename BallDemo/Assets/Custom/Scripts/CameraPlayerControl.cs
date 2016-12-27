@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnitySampleAssets.CrossPlatformInput;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class CameraPlayerControl : MonoBehaviour
