@@ -3,6 +3,8 @@ using System.Collections;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public bool MenuEnabled;
+
     Transform player;
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
@@ -20,6 +22,8 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
+        if (MenuEnabled) return;
+
         if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
         {
             nav.SetDestination(player.position);

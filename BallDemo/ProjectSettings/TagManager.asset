@@ -8,6 +8,8 @@ TagManager:
   - DeathZone
   - LifeUp
   - PowerUpJump
+  - Enemy
+  - Score
   layers:
   - Default
   - TransparentFX
