@@ -6,7 +6,7 @@ namespace CompleteProject
 {
     public class ScoreManager : MonoBehaviour
     {
-        public static int score;        // The player's score.
+        public static int score;        // The player's Score.
 
 
         Text text;                      // Reference to the Text component.
@@ -17,14 +17,14 @@ namespace CompleteProject
             // Set up the reference.
             text = GetComponent <Text> ();
 
-            // Reset the score.
+            // Reset the Score.
             score = 0;
         }
 
 
         void Update ()
         {
-            // Set the displayed text to be the word "Score" followed by the score value.
+            // Set the displayed text to be the word "Score" followed by the Score value.
             text.text = "Score: " + score;
         }
     }

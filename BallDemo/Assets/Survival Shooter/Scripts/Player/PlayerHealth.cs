@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.ThirdPerson;
 
 
 public class PlayerHealth : MonoBehaviour
@@ -10,78 +11,53 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     public Slider healthSlider;
     public Image damageImage;
-    public AudioClip deathClip;
+
     public float flashSpeed = 5f;
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
 
-
-    Animator anim;
     AudioSource playerAudio;
-    PlayerMovement playerMovement;
-    //PlayerShooting playerShooting;
     bool isDead;
     bool damaged;
 
-
-    void Awake ()
+    void Awake()
     {
-        anim = GetComponent <Animator> ();
-        playerAudio = GetComponent <AudioSource> ();
-        playerMovement = GetComponent <PlayerMovement> ();
-        //playerShooting = GetComponentInChildren <PlayerShooting> ();
+        playerAudio = GetComponents<AudioSource>()[3];
         currentHealth = startingHealth;
     }
 
 
-    void Update ()
+    void Update()
     {
-        if(damaged)
+        if (damaged)
         {
             damageImage.color = flashColour;
         }
         else
         {
-            damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+            damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
         }
         damaged = false;
     }
 
 
-    public void TakeDamage (int amount)
+    public void TakeDamage(int amount)
     {
         damaged = true;
-
         currentHealth -= amount;
-
         healthSlider.value = currentHealth;
+        playerAudio.Play();
 
-        playerAudio.Play ();
-
-        if(currentHealth <= 0 && !isDead)
+        if (currentHealth <= 0 && !isDead)
         {
-            Death ();
+            isDead = true;
+            GetComponent<Death>().Die();
         }
     }
 
-
-    void Death ()
+    public void RestoreLife()
     {
-        isDead = true;
-
-        //playerShooting.DisableEffects ();
-
-        anim.SetTrigger ("Die");
-
-        playerAudio.clip = deathClip;
-        playerAudio.Play ();
-
-        playerMovement.enabled = false;
-        //playerShooting.enabled = false;
+        currentHealth = 100;
+        healthSlider.value = currentHealth;
     }
-
-
-    public void RestartLevel ()
-    {
-        SceneManager.LoadScene (0);
-    }
+    
 }

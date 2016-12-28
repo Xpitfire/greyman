@@ -99,7 +99,7 @@ namespace CompleteProject
             // The enemy should no sink.
             isSinking = true;
 
-            // Increase the score by the enemy's score value.
+            // Increase the score by the enemy's Score value.
             ScoreManager.score += scoreValue;
 
             // After 2 seconds destory the enemy.

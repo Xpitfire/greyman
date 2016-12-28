@@ -8,16 +8,17 @@ public class CameraPlayerControl : MonoBehaviour
 {
     public Transform lookAt;
 
+    public float smoothSpeed = 7.5f;
+    public float distance = 5.5f;
+    public float yOffset = 2.5f;
+    public float turnAngle = 30;
+
     private Vector3 desiredPosition;
     private Vector3 offset;
 
-    private float smoothSpeed = 7.5f;
-    private float distance = 3f;
-    private float yOffset = 3.5f;
-
     void Start()
     {
-        offset = new Vector3(0, yOffset - 1, -2f*distance);
+        offset = new Vector3(0, yOffset, -distance);
     }
     
     void Update()
@@ -44,10 +45,10 @@ public class CameraPlayerControl : MonoBehaviour
         switch (direction)
         {
             case 0:
-                offset = Quaternion.Euler(0, -45, 0) * offset;
+                offset = Quaternion.Euler(0, -turnAngle, 0) * offset;
                 break;
             case 1:
-                offset = Quaternion.Euler(0, 45, 0) * offset;
+                offset = Quaternion.Euler(0, turnAngle, 0) * offset;
                 break;
         }
     }

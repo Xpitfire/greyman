@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Collectible
   - DeathZone
+  - LifeUp
+  - PowerUpJump
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Shootable
   - LightMask
   - Invisible
-  - 
+  - Menu
   - 
   - 
   - 
