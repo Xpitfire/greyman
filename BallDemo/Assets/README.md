@@ -7,3 +7,5 @@ Project Prerequisites
 * [Realistic Terrain Collection LITE](https://www.assetstore.unity3d.com/en/#!/content/47726)
 * [ats Snow Suite](https://www.assetstore.unity3d.com/en/#!/content/4144)
 * [Natural Tiling Textures](https://www.assetstore.unity3d.com/en/#!/content/35173)
+* [Mobile Power Ups](https://www.assetstore.unity3d.com/en/#!/content/36106)
+* [Sky FX Package](https://www.assetstore.unity3d.com/en/#!/content/19242)
