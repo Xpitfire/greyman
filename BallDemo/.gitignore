@@ -28,20 +28,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-
-# Ignore standard assets
-Assets/Standard Assets
-Assets/SampleScenes
-Assets/0000 terrain snow
-Assets/NaturalTilingTextures
-Assets/ProceduralToolkit
-Assets/Realistic Terrain Collection
-Assets/Editor
-
-# Ignore standard assets meta data
-Assets/SampleScenes.meta
-Assets/Standard Assets.meta
-Assets/Realistic Terrain Collection.meta
-Assets/ProceduralToolkit.meta
-Assets/NaturalTilingTextures.meta
-Assets/0000 terrain snow.meta
