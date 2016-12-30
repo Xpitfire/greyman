@@ -11,7 +11,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Lauras Technologies
-  productName: GreyMan
+  productName: Grey Man
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21176471, a: 1}
@@ -20,7 +20,7 @@ PlayerSettings:
   m_SplashScreenOverlayOpacity: 0.5
   m_SplashScreenAnimation: 1
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -38,7 +38,9 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 0}
+  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+    duration: 4
+  - logo: {fileID: 21300000, guid: e3efb5bba84516444894c7b7b6850a0b, type: 3}
     duration: 4
   m_SplashScreenBackgroundLandscape: {fileID: 0}
   m_SplashScreenBackgroundPortrait: {fileID: 0}
@@ -195,8 +197,8 @@ PlayerSettings:
   appleDeveloperTeamID: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 2800000, guid: e3efb5bba84516444894c7b7b6850a0b, type: 3}
-  AndroidKeystoreName: 
+  androidSplashScreen: {fileID: 0}
+  AndroidKeystoreName: C:/Workspace/GitHub/balldemo/BallDemo/App/user.keystore
   AndroidKeyaliasName: 
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
@@ -583,9 +585,9 @@ PlayerSettings:
     Game_Performance: 0
     Hub: 0
     Purchasing: 0
-    UNet: 0
+    UNet: 1
     Unity_Ads: 0
-  cloudProjectId: 71212f53-3cb2-48c0-8c52-fb323134c997
-  projectName: Space Shooter
-  organizationId: will-goldstone
+  cloudProjectId: 41b9a9d2-42b4-4226-ac28-03d7ca123b37
+  projectName: Grey Man
+  organizationId: marius-constantin-dinu
   cloudEnabled: 0
